@@ -1,33 +1,34 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import "./styles.css";
+import { Links, Meta, Scripts, ScrollRestoration } from "react-router";
+
+// Variante A: CSS via links()-Export
+import stylesheetUrl from "./styles.css?url";
+export function links() {
+  return [{ rel: "stylesheet", href: stylesheetUrl }];
+}
+
+// (Optional) Meta-Tags
+export function meta() {
+  return [{ title: "Souvenir’s – Musik · Kultur · Sport" }];
+}
 
 export default function Root() {
   return (
-    <>
-      <Navbar />
-      <Outlet />
-      <footer>
-        <div className="container">
-          <div className="cols">
-            <div>
-              <strong>Souvenir’s</strong><br/>
-              <small>Musik · Kultur · Sport</small>
-            </div>
-            <div>
-              <strong>Kontakt</strong><br/>
-              <small><a href="mailto:info@souvenirs.club">info@souvenirs.club</a></small>
-            </div>
-            <div>
-              <strong>Folge uns</strong><br/>
-              <small><a href="#">Instagram</a> · <a href="#">TikTok</a></small>
-            </div>
-          </div>
-          <div style={{ marginTop: 14 }}>
-            <small>© 2025 Souvenir’s</small>
-          </div>
-        </div>
-      </footer>
-    </>
+    <html lang="de">
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <Meta />
+        <Links />       {/* ← WICHTIG: rendert <link rel="stylesheet" ...> */}
+      </head>
+      <body>
+        <Navbar />
+        <Outlet />      {/* Seiteninhalt */}
+        <ScrollRestoration />
+        <Scripts />     {/* Bundles/Skripte */}
+      </body>
+    </html>
   );
 }
