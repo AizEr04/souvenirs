@@ -1,29 +1,67 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Souvenirs</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Souvenir’s – Events, Musik, Kultur & Sport</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <h1>Souvenirs</h1>
-    <nav>
-      <a href="index.html">Start</a>
-      <a href="events.html">Events</a>
-      <a href="kontakt.html">Kontakt</a>
-    </nav>
+  
+<nav class="navbar">
+  <div class="container inner">
+    <a class="brand" href="index.html">Souvenir’s</a>
+    <div class="menu" role="navigation" aria-label="Hauptnavigation">
+      <a href="about.html">Über uns</a>
+      <a href="info.html">Infos</a>
+      <a href="sponsors.html">Sponsoren</a>
+    </div>
+  </div>
+</nav>
+
+  <header class="hero">
+    <img class="bg" src="assets/img/94ff67b6b73229920c542599a9788fe303af2bbd.png" alt="Event Hero Bild" />
+    <div class="container">
+      <h1>Souvenir’s</h1>
+      <p class="sub">Gemeinsam Musik, Kultur &amp; Sport erleben</p>
+      <div class="cta">
+        <a class="btn primary" href="#events">Zu den Events</a>
+        <a class="btn ghost" href="about.html">Über uns</a>
+      </div>
+    </div>
   </header>
 
   <main>
-    <h2>Willkommen!</h2>
-    <p>Wir organisieren Events im Bereich Musik, Kultur und Sport.  
-    Unser Ziel ist es, Menschen zusammenzubringen und Gemeinschaft zu fördern.</p>
+    <section id="events" class="section">
+      <div class="container">
+        <h2>Kommende Events</h2>
+        <div class="events-grid" id="eventsGrid" aria-live="polite"></div>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Souvenirs</p>
+    <div class="container">
+      <div class="cols">
+        <div>
+          <strong>Souvenir’s</strong><br/>
+          <small>Musik · Kultur · Sport</small>
+        </div>
+        <div>
+          <strong>Kontakt</strong><br/>
+          <small><a href="mailto:info@souvenirs.club">info@souvenirs.club</a></small>
+        </div>
+        <div>
+          <strong>Folge uns</strong><br/>
+          <small><a href="#">Instagram</a> · <a href="#">TikTok</a></small>
+        </div>
+      </div>
+      <div style="margin-top:14px">
+        <small>© 2025 Souvenir’s</small>
+      </div>
+    </div>
   </footer>
+
+  <script src="js/main.js" defer></script>
 </body>
 </html>
