@@ -7,5 +7,5 @@ export default {
 
   // Variante B (Homepage vor-rendern):
   // erzeugt build/client/index.html (Homepage) + SPA-Fallback unter __spa-fallback.html
-  // prerender: ["/"],
+  prerender: ["/"],
 } satisfies Config;
