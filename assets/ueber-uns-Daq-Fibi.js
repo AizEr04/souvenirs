@@ -1,0 +1,1 @@
+import{w as s,p as e}from"./chunk-PVWAREVJ-CMr5zwa3.js";const r=s(function(){return e.jsx("main",{className:"section",children:e.jsxs("div",{className:"container",children:[e.jsx("h2",{children:"Über uns"}),e.jsx("p",{children:"Hier könnt ihr eure Mission, Teammitglieder und die Geschichte des Vereins vorstellen."})]})})});export{r as default};
