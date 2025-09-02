@@ -1,30 +1,40 @@
 {
-  "name": "",
+  "name": "souvenirs",
   "private": true,
   "type": "module",
+  "homepage": "https://AizEr04.github.io/souvenirs",
   "scripts": {
-    "build": "react-router build",
     "dev": "react-router dev",
-    "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc"
+    "build": "react-router build",
+    "postbuild": "cp build/client/souvenirs/index.html build/client/index.html && cp build/client/souvenirs/index.html build/client/404.html && rm -rf build/client/souvenirs && touch build/client/.nojekyll",
+    "deploy": "gh-pages -d build/client -b gh-pages -t"
   },
   "dependencies": {
     "@react-router/node": "^7.7.1",
     "@react-router/serve": "^7.7.1",
+    "clsx": "^2.1.1",
     "isbot": "^5.1.27",
+    "lucide-react": "^0.542.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-router": "^7.7.1"
+    "react-router": "^7.7.1",
+    "react-router-dom": "^7.8.2",
+    "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
-    "@react-router/dev": "^7.7.1",
+    "@react-router/dev": "^7.8.2",
+    "@tailwindcss/postcss": "^4.1.12",
     "@tailwindcss/vite": "^4.1.4",
     "@types/node": "^20",
-    "@types/react": "^19.1.2",
-    "@types/react-dom": "^19.1.2",
-    "tailwindcss": "^4.1.4",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.8",
+    "@vitejs/plugin-react": "^5.0.2",
+    "autoprefixer": "^10.4.21",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.12",
     "typescript": "^5.8.3",
-    "vite": "^6.3.3",
+    "vite": "^6.3.5",
     "vite-tsconfig-paths": "^5.1.4"
   }
 }
