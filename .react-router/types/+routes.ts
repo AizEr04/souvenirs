@@ -13,15 +13,36 @@ type Pages = {
   "/": {
     params: {};
   };
+  "/ueber-uns": {
+    params: {};
+  };
+  "/infos": {
+    params: {};
+  };
+  "/sponsoren": {
+    params: {};
+  };
 };
 
 type RouteFiles = {
   "root.tsx": {
     id: "root";
-    page: "/";
+    page: "/" | "/ueber-uns" | "/infos" | "/sponsoren";
   };
   "routes/_index.tsx": {
     id: "routes/_index";
     page: "/";
+  };
+  "routes/ueber-uns.tsx": {
+    id: "routes/ueber-uns";
+    page: "/ueber-uns";
+  };
+  "routes/infos.tsx": {
+    id: "routes/infos";
+    page: "/infos";
+  };
+  "routes/sponsoren.tsx": {
+    id: "routes/sponsoren";
+    page: "/sponsoren";
   };
 };
