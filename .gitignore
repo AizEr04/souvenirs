@@ -12,6 +12,9 @@ build/*
 .cache/*
 .vite/*
 
+# React Router Build Cache
+.react-router/
+
 # Local env files
 .env
 .env.local
