@@ -1,0 +1,1 @@
+import{w as e,p as n}from"./chunk-PVWAREVJ-Bx-YUU1E.js";const t=e(function(){return n.jsx("main",{className:"section",children:n.jsxs("div",{className:"container",children:[n.jsx("h2",{children:"Infos"}),n.jsx("p",{children:"Allgemeine Informationen zu Mitgliedschaft, Teilnahmebedingungen und Kontaktmöglichkeiten."})]})})});export{t as default};
