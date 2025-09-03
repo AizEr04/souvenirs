@@ -257,7 +257,7 @@ export function Sponsors() {
               className="flex items-center text-blue-600 hover:text-blue-800 transition-colors"
             >
               <Mail className="mr-2" size={20} />
-              sponsoring@souvenirs.de
+              souvenir.due@gmail.com
             </a>
             <a 
               href="tel:+491234567890" 
