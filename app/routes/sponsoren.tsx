@@ -1,11 +1,13 @@
-export default function Sponsoren() {
-    return (
-      <main className="section">
-        <div className="container">
-          <h2>Sponsoren</h2>
-          <p>Stellt eure Partner und Unterstützer vor. Logos können hier als Raster platziert werden.</p>
-        </div>
-      </main>
-    );
-  }
-  
+import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
+import { Sponsors } from "../components/Sponsors";
+
+export default function UeberUns() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 flex flex-col">
+      <Header />
+      <Sponsors />
+      <Footer />
+    </div>
+  );
+}

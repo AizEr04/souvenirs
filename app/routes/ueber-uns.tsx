@@ -1,10 +1,13 @@
+import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
+import { AboutUs } from "../components/AboutUs";
+
 export default function UeberUns() {
   return (
-    <main className="section">
-      <div className="container">
-        <h2>Über uns</h2>
-        <p>Hier könnt ihr eure Mission, Teammitglieder und die Geschichte des Vereins vorstellen.</p>
-      </div>
-    </main>
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 flex flex-col">
+      <Header />
+      <AboutUs />
+      <Footer />
+    </div>
   );
 }
