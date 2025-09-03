@@ -19,7 +19,7 @@ export function Footer() {
             <h3 className="text-lg font-medium mb-4">Kontakt</h3>
             <div className="flex space-x-4 justify-center">
               <a 
-                href="https://instagram.com/souvenirs" 
+                href="https://instagram.com/souvenir.due" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 p-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
@@ -28,7 +28,7 @@ export function Footer() {
                 <Instagram size={20} />
               </a>
               <a 
-                href="mailto:info@souvenirs.de" 
+                href="mailto:souvenir.due@gmail.com" 
                 className="bg-gradient-to-r from-blue-500 to-cyan-600 hover:from-blue-600 hover:to-cyan-700 p-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                 aria-label="E-Mail"
               >

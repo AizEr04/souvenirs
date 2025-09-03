@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import emailjs from "@emailjs/browser";
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
@@ -6,6 +7,9 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Mail, Phone, Heart, Star, Users, Trophy } from 'lucide-react';
 
 export function Sponsors() {
+  const [status, setStatus] = useState<"idle" | "sending" | "ok" | "error">("idle");
+  const [error, setError] = useState<string | null>(null);
+    
   const [formData, setFormData] = useState({
     name: '',
     company: '',
@@ -22,12 +26,34 @@ export function Sponsors() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Hier würde normalerweise die Form-Logik implementiert werden
-    console.log('Sponsor-Anfrage:', formData);
-    alert('Vielen Dank für Ihr Interesse! Wir melden uns bald bei Ihnen.');
-  };
+    setStatus("sending");
+    setError(null);
+  
+    try {
+      const result = await emailjs.send(
+        "service_xxx",        // deine Service ID
+        "template_xxx",       // deine Template ID
+        {
+          name: formData.name,
+          company: formData.company,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+        },
+        "YOUR_PUBLIC_KEY"     // dein Public Key
+      );
+  
+      console.log("EmailJS result:", result.text);
+      setStatus("ok");
+      setFormData({ name: "", company: "", email: "", phone: "", message: "" });
+    } catch (err) {
+      console.error("EmailJS error:", err);
+      setStatus("error");
+      setError("Senden fehlgeschlagen. Bitte versuchen Sie es später erneut.");
+    }
+  };  
 
   return (
     <div className="w-full px-6 py-12 flex-1">
@@ -192,13 +218,30 @@ export function Sponsors() {
 
               <div className="text-center">
                 <Button
-                  type="submit"
-                  className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white px-8 py-3 text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                    type="submit"
+                    disabled={status === "sending"}
+                    className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white px-8 py-3 text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                 >
-                  <Mail className="mr-2" size={20} />
-                  Sponsoring-Anfrage senden
+                    {status === "sending" ? "Senden…" : (
+                    <>
+                        <Mail className="mr-2" size={20} />
+                        Sponsoring-Anfrage senden
+                    </>
+                    )}
                 </Button>
               </div>
+
+                {status === "ok" && (
+                <p className="text-center text-green-700 mt-4">
+                    Vielen Dank! Wir haben Ihre Nachricht erhalten und melden uns bald.
+                </p>
+                )}
+
+                {status === "error" && (
+                <p className="text-center text-red-600 mt-4">
+                    {error}
+                </p>
+                )}
             </form>
           </CardContent>
         </Card>
@@ -210,7 +253,7 @@ export function Sponsors() {
           </h3>
           <div className="flex justify-center space-x-8">
             <a 
-              href="mailto:sponsoring@souvenirs.de" 
+              href="mailto:souvenir.due@gmail.com" 
               className="flex items-center text-blue-600 hover:text-blue-800 transition-colors"
             >
               <Mail className="mr-2" size={20} />
@@ -221,7 +264,7 @@ export function Sponsors() {
               className="flex items-center text-blue-600 hover:text-blue-800 transition-colors"
             >
               <Phone className="mr-2" size={20} />
-              +49 123 456 7890
+              +41 79 3000 du bisch grusig
             </a>
           </div>
         </div>
