@@ -1,1 +1,0 @@
-import{w as n,p as e}from"./chunk-PVWAREVJ-CMr5zwa3.js";const t=n(function(){return e.jsx("main",{className:"section",children:e.jsxs("div",{className:"container",children:[e.jsx("h2",{children:"Sponsoren"}),e.jsx("p",{children:"Stellt eure Partner und Unterstützer vor. Logos können hier als Raster platziert werden."})]})})});export{t as default};
