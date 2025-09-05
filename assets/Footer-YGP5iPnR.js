@@ -2,12 +2,12 @@ import{x as g,p as e,t as i,a as n}from"./chunk-PVWAREVJ-dDZBaaBI.js";function L
         fixed top-0 inset-x-0 z-50
         bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600
         text-white shadow-lg
-        `,style:{height:"var(--nav-h)"},children:e.jsxs("div",{className:"max-w-4xl mx-auto px-6 py-4 flex justify-between items-center",children:[e.jsx(i,{to:"/",className:"text-lg font-medium cursor-pointer hover:text-yellow-200 transition-colors",children:"SOUVENIRS"}),e.jsxs("nav",{className:"flex space-x-6",children:[e.jsx(i,{to:"/ueber-uns",className:`hover:text-yellow-200 transition-colors ${t.pathname==="/ueber-uns"?"text-yellow-200":""}`,children:"Über uns"}),e.jsx(i,{to:"/sponsoren",className:`hover:text-yellow-200 transition-colors ${t.pathname==="/sponsoren"?"text-yellow-200":""}`,children:"Sponsoren"})]})]})})}/**
+        `,children:e.jsxs("div",{className:"max-w-4xl mx-auto px-6 py-4 flex justify-between items-center",children:[e.jsx(i,{to:"/",className:"text-lg font-medium cursor-pointer hover:text-yellow-200 transition-colors",children:"SOUVENIRS"}),e.jsxs("nav",{className:"flex space-x-6",children:[e.jsx(i,{to:"/ueber-uns",className:`hover:text-yellow-200 transition-colors ${t.pathname==="/ueber-uns"?"text-yellow-200":""}`,children:"Über uns"}),e.jsx(i,{to:"/sponsoren",className:`hover:text-yellow-200 transition-colors ${t.pathname==="/sponsoren"?"text-yellow-200":""}`,children:"Sponsoren"})]})]})})}/**
  * @license lucide-react v0.542.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const y=t=>t.replace(/([a-z0-9])([A-Z])/g,"$1-$2").toLowerCase(),w=t=>t.replace(/^([A-Z])|[\s-_]+(\w)/g,(r,a,s)=>s?s.toUpperCase():a.toLowerCase()),d=t=>{const r=w(t);return r.charAt(0).toUpperCase()+r.slice(1)},m=(...t)=>t.filter((r,a,s)=>!!r&&r.trim()!==""&&s.indexOf(r)===a).join(" ").trim(),v=t=>{for(const r in t)if(r.startsWith("aria-")||r==="role"||r==="title")return!0};/**
+ */const w=t=>t.replace(/([a-z0-9])([A-Z])/g,"$1-$2").toLowerCase(),y=t=>t.replace(/^([A-Z])|[\s-_]+(\w)/g,(r,a,s)=>s?s.toUpperCase():a.toLowerCase()),d=t=>{const r=y(t);return r.charAt(0).toUpperCase()+r.slice(1)},m=(...t)=>t.filter((r,a,s)=>!!r&&r.trim()!==""&&s.indexOf(r)===a).join(" ").trim(),v=t=>{for(const r in t)if(r.startsWith("aria-")||r==="role"||r==="title")return!0};/**
  * @license lucide-react v0.542.0 - ISC
  *
  * This source code is licensed under the ISC license.
@@ -22,7 +22,7 @@ import{x as g,p as e,t as i,a as n}from"./chunk-PVWAREVJ-dDZBaaBI.js";function L
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const x=(t,r)=>{const a=n.forwardRef(({className:s,...l},o)=>n.createElement(b,{ref:o,iconNode:r,className:m(`lucide-${y(d(t))}`,`lucide-${t}`,s),...l}));return a.displayName=d(t),a};/**
+ */const x=(t,r)=>{const a=n.forwardRef(({className:s,...l},o)=>n.createElement(b,{ref:o,iconNode:r,className:m(`lucide-${w(d(t))}`,`lucide-${t}`,s),...l}));return a.displayName=d(t),a};/**
  * @license lucide-react v0.542.0 - ISC
  *
  * This source code is licensed under the ISC license.
