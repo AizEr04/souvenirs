@@ -10,7 +10,6 @@ export function Header() {
         bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600
         text-white shadow-lg
         "
-        style={{ height: "var(--nav-h)" }}
     >
       <div className="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo / Titel → führt nach Home */}

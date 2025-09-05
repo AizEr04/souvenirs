@@ -7,7 +7,6 @@ export default [
 
   // Weitere Seiten:
   route("ueber-uns", "routes/ueber-uns.tsx"),
-  route("infos", "routes/infos.tsx"),
   route("sponsoren", "routes/sponsoren.tsx"),
   route("info/:slug", "routes/info.$slug.tsx"),
   // Optional: Catch-all 404 (eigene Seite)

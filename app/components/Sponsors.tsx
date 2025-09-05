@@ -260,7 +260,7 @@ export function Sponsors() {
               souvenir.due@gmail.com
             </a>
             <a 
-              href="tel:+491234567890" 
+              href="tel:+41793101734" 
               className="flex items-center text-blue-600 hover:text-blue-800 transition-colors"
             >
               <Phone className="mr-2" size={20} />

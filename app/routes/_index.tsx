@@ -6,8 +6,10 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 flex flex-col">
       <Header />
-      <HomePage />
-      <Footer />
+      <div className="pt-15 flex-1 flex flex-col">
+        <HomePage />
+        <Footer />
+      </div>
     </div>
   );
 }
