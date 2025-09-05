@@ -1,9 +1,9 @@
-import{t as g,p as e,v as l,a as n}from"./chunk-PVWAREVJ-C3l49en2.js";function L(){const t=g();return e.jsx("header",{className:"bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600 text-white shadow-lg",children:e.jsxs("div",{className:"max-w-4xl mx-auto px-6 py-4 flex justify-between items-center",children:[e.jsx(l,{to:"/",className:"text-lg font-medium cursor-pointer hover:text-yellow-200 transition-colors",children:"SOUVENIRS"}),e.jsxs("nav",{className:"flex space-x-6",children:[e.jsx(l,{to:"/ueber-uns",className:`hover:text-yellow-200 transition-colors ${t.pathname==="/ueber-uns"?"text-yellow-200":""}`,children:"Über uns"}),e.jsx(l,{to:"/infos",className:`hover:text-yellow-200 transition-colors ${t.pathname==="/infos"?"text-yellow-200":""}`,children:"Infos"}),e.jsx(l,{to:"/sponsoren",className:`hover:text-yellow-200 transition-colors ${t.pathname==="/sponsoren"?"text-yellow-200":""}`,children:"Sponsoren"})]})]})})}/**
+import{x as g,p as e,t as i,a as n}from"./chunk-PVWAREVJ-dDZBaaBI.js";function L(){const t=g();return e.jsx("header",{className:"bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600 text-white shadow-lg",children:e.jsxs("div",{className:"max-w-4xl mx-auto px-6 py-4 flex justify-between items-center",children:[e.jsx(i,{to:"/",className:"text-lg font-medium cursor-pointer hover:text-yellow-200 transition-colors",children:"SOUVENIRS"}),e.jsxs("nav",{className:"flex space-x-6",children:[e.jsx(i,{to:"/ueber-uns",className:`hover:text-yellow-200 transition-colors ${t.pathname==="/ueber-uns"?"text-yellow-200":""}`,children:"Über uns"}),e.jsx(i,{to:"/sponsoren",className:`hover:text-yellow-200 transition-colors ${t.pathname==="/sponsoren"?"text-yellow-200":""}`,children:"Sponsoren"})]})]})})}/**
  * @license lucide-react v0.542.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const w=t=>t.replace(/([a-z0-9])([A-Z])/g,"$1-$2").toLowerCase(),y=t=>t.replace(/^([A-Z])|[\s-_]+(\w)/g,(r,s,a)=>a?a.toUpperCase():s.toLowerCase()),d=t=>{const r=y(t);return r.charAt(0).toUpperCase()+r.slice(1)},m=(...t)=>t.filter((r,s,a)=>!!r&&r.trim()!==""&&a.indexOf(r)===s).join(" ").trim(),v=t=>{for(const r in t)if(r.startsWith("aria-")||r==="role"||r==="title")return!0};/**
+ */const w=t=>t.replace(/([a-z0-9])([A-Z])/g,"$1-$2").toLowerCase(),y=t=>t.replace(/^([A-Z])|[\s-_]+(\w)/g,(r,a,s)=>s?s.toUpperCase():a.toLowerCase()),d=t=>{const r=y(t);return r.charAt(0).toUpperCase()+r.slice(1)},m=(...t)=>t.filter((r,a,s)=>!!r&&r.trim()!==""&&s.indexOf(r)===a).join(" ").trim(),v=t=>{for(const r in t)if(r.startsWith("aria-")||r==="role"||r==="title")return!0};/**
  * @license lucide-react v0.542.0 - ISC
  *
  * This source code is licensed under the ISC license.
@@ -13,12 +13,12 @@ import{t as g,p as e,v as l,a as n}from"./chunk-PVWAREVJ-C3l49en2.js";function L
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const b=n.forwardRef(({color:t="currentColor",size:r=24,strokeWidth:s=2,absoluteStrokeWidth:a,className:i="",children:o,iconNode:h,...c},u)=>n.createElement("svg",{ref:u,...j,width:r,height:r,stroke:t,strokeWidth:a?Number(s)*24/Number(r):s,className:m("lucide",i),...!o&&!v(c)&&{"aria-hidden":"true"},...c},[...h.map(([p,f])=>n.createElement(p,f)),...Array.isArray(o)?o:[o]]));/**
+ */const b=n.forwardRef(({color:t="currentColor",size:r=24,strokeWidth:a=2,absoluteStrokeWidth:s,className:l="",children:o,iconNode:h,...c},u)=>n.createElement("svg",{ref:u,...j,width:r,height:r,stroke:t,strokeWidth:s?Number(a)*24/Number(r):a,className:m("lucide",l),...!o&&!v(c)&&{"aria-hidden":"true"},...c},[...h.map(([p,f])=>n.createElement(p,f)),...Array.isArray(o)?o:[o]]));/**
  * @license lucide-react v0.542.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const x=(t,r)=>{const s=n.forwardRef(({className:a,...i},o)=>n.createElement(b,{ref:o,iconNode:r,className:m(`lucide-${w(d(t))}`,`lucide-${t}`,a),...i}));return s.displayName=d(t),s};/**
+ */const x=(t,r)=>{const a=n.forwardRef(({className:s,...l},o)=>n.createElement(b,{ref:o,iconNode:r,className:m(`lucide-${w(d(t))}`,`lucide-${t}`,s),...l}));return a.displayName=d(t),a};/**
  * @license lucide-react v0.542.0 - ISC
  *
  * This source code is licensed under the ISC license.
