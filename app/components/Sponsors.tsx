@@ -33,8 +33,8 @@ export function Sponsors() {
   
     try {
       const result = await emailjs.send(
-        "service_xxx",        // deine Service ID
-        "template_xxx",       // deine Template ID
+        "service_sjq8vfh",        // deine Service ID
+        "template_vx9vsga",       // deine Template ID
         {
           name: formData.name,
           company: formData.company,
@@ -42,7 +42,7 @@ export function Sponsors() {
           phone: formData.phone,
           message: formData.message,
         },
-        "YOUR_PUBLIC_KEY"     // dein Public Key
+        "5CjXYK24MULfDk7vG"     // dein Public Key
       );
   
       console.log("EmailJS result:", result.text);
@@ -51,7 +51,7 @@ export function Sponsors() {
     } catch (err) {
       console.error("EmailJS error:", err);
       setStatus("error");
-      setError("Senden fehlgeschlagen. Bitte versuchen Sie es später erneut.");
+      setError("Senden fehlgeschlagen. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns direkt.");
     }
   };  
 
