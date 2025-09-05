@@ -184,7 +184,7 @@ export function Sponsors() {
                     onChange={handleInputChange}
                     required
                     className="border-slate-300 focus:border-purple-500 focus:ring-purple-500"
-                    placeholder="ihre.email@beispiel.de"
+                    placeholder="ihre.email@beispiel.ch"
                   />
                 </div>
                 <div>
@@ -197,7 +197,7 @@ export function Sponsors() {
                     value={formData.phone}
                     onChange={handleInputChange}
                     className="border-slate-300 focus:border-purple-500 focus:ring-purple-500"
-                    placeholder="+49 123 456789"
+                    placeholder="+41 79 123 45 67"
                   />
                 </div>
               </div>
@@ -264,7 +264,7 @@ export function Sponsors() {
               className="flex items-center text-blue-600 hover:text-blue-800 transition-colors"
             >
               <Phone className="mr-2" size={20} />
-              +41 79 3000 du bisch grusig
+              +41 79 310 17 34
             </a>
           </div>
         </div>
