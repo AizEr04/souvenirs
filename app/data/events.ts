@@ -3,86 +3,58 @@ import type { Event } from "../types/event";
 export const EVENTS: Event[] = [
   {
     id: 1,
-    slug: "sportfest",               
-    name: "Sportfest",
-    date: "15. September",
-    place: "Stadtpark Arena",
-    startTime: "14:00",
-    endTime: "18:00",
+    slug: "martinsmarkt",
+    name: {
+      de: "Souvenirs Stand am Martinsmarkt",
+      en: "Souvenirs stand at Martinsmarkt",
+      fr: "Stand Souvenirs au Martinsmarkt"
+    },
+    date: {
+      de: "08. November",
+      en: "November 8",
+      fr: "8 novembre"
+    },
+    place: {
+      de: "Hauptstrasse Düdingen",
+      en: "Hauptstrasse Düdingen",
+      fr: "Hauptstrasse Düdingen"
+    },
+    startTime: "08:00",
+    endTime: "16:00",
     color: "from-blue-500 to-purple-600",
     details: {
-      description:
-        "Unser jährliches Sportfest bietet verschiedene Disziplinen für alle Altersgruppen. Von Fußball über Volleyball bis hin zu Leichtathletik – für jeden ist etwas dabei.",
-      capacity: 500,
-      price: "Kostenlos",
-      organizer: "SOUVENIRS Sportteam",
-      category: "Sport",
+      description: {
+        de: "Am diesjährigen Martinsmarkt in Düdingen sind wir mit einem eigenen Stand vertreten. Dort schenken wir erfrischende Getränke aus und bieten feinen Süssmost an. Kommt vorbei, gönnt euch etwas Leckeres und unterstützt gleichzeitig unseren Verein – wir freuen uns auf euch!",
+        en: "We’ll have our own stand at this year’s Martinsmarkt in Düdingen. We’ll serve refreshing drinks and delicious apple must. Come by, treat yourself, and support our club — we’re excited to see you!",
+        fr: "Nous aurons notre propre stand au Martinsmarkt de Düdingen cette année. Nous servirons des boissons rafraîchissantes et du moût de pomme. Passez nous voir, faites-vous plaisir et soutenez notre association — nous nous réjouissons de vous accueillir !"
+      },
+      price: { de: "Kostenlos", en: "Free", fr: "Gratuit" },
+      organizer: { de: "SOUVENIRS", en: "SOUVENIRS", fr: "SOUVENIRS" },
+      category: { de: "Kultur", en: "Culture", fr: "Culture" },
       highlights: [
-        "Verschiedene Sportarten",
-        "Für alle Altersgruppen",
-        "Preisverleihung",
-        "Verpflegung vor Ort",
+        { de: "Selbstgemachter Süssmost", en: "Homemade apple must", fr: "Moût de pomme fait maison" },
+        { de: "Warmer & kalter Öpfuschuss", en: "Warm & cold Öpfuschuss", fr: "Punch de pomme Öpfuschuss" }
       ],
+      // capacity weggelassen → optional
       practical: {
-        anmeldung: "Eine Anmeldung ist nicht erforderlich – komm einfach vorbei!",
-        verpflegung: "Getränke und Snacks sind vor Ort erhältlich.",
-        parken: "Kostenlose Parkplätze in der Nähe verfügbar.",
-        wetter: "Findet bei jedem Wetter statt (außer bei Unwetterwarnung).",
-        barrierefreiheit: "Bei Bedarf bitte vorab melden.",
-      },
-    },
-  },
-  {
-    id: 8,
-    slug: "musikabend",
-    name: "Musikabend",
-    date: "20. Oktober",
-    place: "Kulturzentrum",
-    startTime: "19:30",
-    endTime: "23:00",
-    color: "from-pink-500 to-rose-600",
-    details: {
-      description:
-        "Ein unvergesslicher Abend mit lokalen Musikern und Künstlern. Genieße Live-Musik verschiedener Genres in einer besonderen Atmosphäre.",
-      capacity: 200,
-      price: "15€",
-      organizer: "SOUVENIRS Kulturteam",
-      category: "Musik",
-      highlights: ["Live Bands", "Lokale Künstler", "Bar vor Ort", "Tanzfläche"],
-      practical: {
-        anmeldung: "Tickets vor Ort je nach Verfügbarkeit.",
-        verpflegung: "Bar mit Getränken; kleine Snacks.",
-        parken: "ÖPNV empfohlen; wenige Parkplätze.",
-        wetter: "Indoor-Veranstaltung.",
-      },
-    },
-  },
-  {
-    id: 5,
-    slug: "kulturfestival",
-    name: "Kulturfestival",
-    date: "5. November",
-    place: "Marktplatz",
-    startTime: "10:00",
-    endTime: "22:00",
-    color: "from-orange-500 to-yellow-600",
-    details: {
-      description:
-        "Ganztägiges Festival mit Kunst, Musik, Kulinarik und Handwerk. Entdecke lokale Künstler und regionale Spezialitäten.",
-      capacity: 1000,
-      price: "10€",
-      organizer: "SOUVENIRS Kulturteam",
-      category: "Kultur",
-      highlights: ["Kunstausstellung", "Food Trucks", "Handwerkermarkt", "Kinderbereich"],
-      practical: {
-        anmeldung: "Tagestickets am Eingang.",
-        verpflegung: "Food Trucks & Stände.",
-        parken: "Parkhäuser in der Nähe (gebührenpflichtig).",
-        wetter: "Open-Air; bei starkem Regen einzelne Programmpunkte in Zelten.",
-        barrierefreiheit: "Großteils barrierearm; Hilfe an Info-Station.",
-      },
-    },
-  },
+        anmeldung: {
+          de: "Keine Anmeldung nötig – kommt einfach vorbei!",
+          en: "No registration required — just drop by!",
+          fr: "Pas d’inscription nécessaire — venez simplement !"
+        },
+        verpflegung: {
+          de: "Getränke & Süssmost am Stand.",
+          en: "Drinks & apple must at the stand.",
+          fr: "Boissons & moût de pomme au stand."
+        },
+        wetter: {
+          de: "Findet bei jedem Wetter statt.",
+          en: "Takes place in all weather.",
+          fr: "A lieu par tous les temps."
+        }
+      }
+    }
+  }
 ];
 
 export const getEventBySlug = (slug: string) => EVENTS.find(e => e.slug === slug);

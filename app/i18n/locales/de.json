@@ -1,0 +1,138 @@
+{
+    "home": {
+        "hero": {
+            "title": "SOUVENIRS",
+            "subtitle": "Gemeinsam Musik, Kultur & Sport erleben"
+        },
+        "event": {
+            "date": "Datum",
+            "place": "Ort",
+            "time": "Zeit",
+            "details": "Details anzeigen"
+        }
+    },
+    "info": {
+        "empty": {
+            "heading": "Event-Details",
+            "text": "Wähle ein Event auf der Startseite aus, um detaillierte Informationen zu erhalten.",
+            "backHome": "Zur Startseite"
+        },
+        "back": "Zurück zur Startseite",
+        "fields": {
+            "date": "Datum",
+            "time": "Uhrzeit",
+            "place": "Ort",
+            "capacity": "Kapazität",
+            "organizer": "Veranstalter"
+        },
+        "people": "Personen",
+        "sections": {
+            "about": "Über das Event",
+            "highlights": "Highlights",
+            "practical": "Praktische Informationen"
+        },
+        "practical": {
+            "registration": "Anmeldung",
+            "catering": "Verpflegung",
+            "parking": "Parken",
+            "weather": "Wetter",
+            "accessibility": "Barrierefreiheit"
+        }
+    },
+    "about": {
+        "heading": "Über uns",
+        "who": {
+            "title": "Wer sind wir?",
+            "p1": "Souvenirs ist ein leidenschaftliches Event-Team, das es sich zur Aufgabe gemacht hat, unvergessliche Erlebnisse zu schaffen. Seit unserer Gründung organisieren wir erfolgreich Partys, Sportturniere und kulturelle Veranstaltungen, die Menschen zusammenbringen und bleibende Erinnerungen schaffen.",
+            "p2": "Unser Name \"Souvenirs\" steht für genau das – wir möchten, dass jede Veranstaltung zu einem wertvollen Souvenir in den Herzen unserer Teilnehmer wird. Mit viel Kreativität, Engagement und Liebe zum Detail planen wir Events, die weit über das Gewöhnliche hinausgehen."
+        },
+        "mission": {
+            "title": "Unsere Mission",
+            "text": "Musik, Kultur und Sport zu vereinen und dabei eine Atmosphäre zu schaffen, in der sich jeder willkommen und wertgeschätzt fühlt. Wir glauben daran, dass die besten Events entstehen, wenn Leidenschaft auf Professionalität trifft."
+        },
+        "image": {
+            "alt": "Das Souvenirs Event-Team bei der Planung"
+        },
+        "values": {
+            "heading": "Unsere Werte",
+            "passion": {
+                "title": "Leidenschaft",
+                "text": "Wir brennen für das, was wir tun und bringen diese Energie in jede Veranstaltung ein."
+            },
+            "community": {
+                "title": "Gemeinschaft",
+                "text": "Events sollen Menschen verbinden und ein Gefühl der Zusammengehörigkeit schaffen."
+            },
+            "quality": {
+                "title": "Qualität",
+                "text": "Wir setzen auf höchste Standards und achten auf jedes Detail für perfekte Events."
+            }
+        }
+    },
+    "sponsors": {
+        "heading": "Sponsoren",
+        "cta": {
+            "title": "Wir suchen noch Sponsoren!",
+            "text": "Aktuell sind wir noch auf der Suche nach Partnern und Sponsoren, die uns dabei helfen, unvergessliche Events zu organisieren. Wenn Sie Teil unserer Gemeinschaft werden möchten und Ihre Marke mit lebendigen, kulturellen Erlebnissen verknüpfen wollen, freuen wir uns über Ihre Kontaktaufnahme!"
+        },
+        "benefits": {
+            "heading": "Warum Sponsor werden?",
+            "reach": {
+                "title": "Reichweite",
+                "text": "Erreichen Sie eine diverse Zielgruppe bei unseren Events und schaffen Sie bleibende Eindrücke."
+            },
+            "brand": {
+                "title": "Markenimage",
+                "text": "Verbinden Sie Ihre Marke mit positiven Erlebnissen und stärken Sie Ihr Unternehmensimage."
+            },
+            "community": {
+                "title": "Gemeinschaft",
+                "text": "Werden Sie Teil einer lebendigen Community und unterstützen Sie lokale Kultur und Sport."
+            }
+        },
+        "form": {
+            "title": "Interesse an einer Partnerschaft?",
+            "subtitle": "Kontaktieren Sie uns und lassen Sie uns gemeinsam großartige Events schaffen!",
+            "ariaLabel": "Sponsoring-Anfrage Formular",
+            "fields": {
+                "name": "Name",
+                "company": "Unternehmen",
+                "email": "E-Mail",
+                "phone": "Telefon",
+                "message": "Nachricht"
+            },
+            "placeholders": {
+                "name": "Ihr vollständiger Name",
+                "company": "Name Ihres Unternehmens",
+                "email": "ihre.email@beispiel.ch",
+                "phone": "+41 79 123 45 67",
+                "message": "Erzählen Sie uns von Ihren Vorstellungen für eine Partnerschaft..."
+            },
+            "submit": "Sponsoring-Anfrage senden",
+            "sending": "Senden…",
+            "success": "Vielen Dank! Wir haben Ihre Nachricht erhalten und melden uns bald.",
+            "errorMessage": "Senden fehlgeschlagen. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns direkt."
+        },
+        "direct": {
+            "title": "Oder kontaktieren Sie uns direkt:",
+            "emailAria": "E-Mail an Souvenirs senden",
+            "phoneAria": "Telefonnummer von Souvenirs anrufen"
+        }
+    },
+    "footer": {
+        "sponsor": {
+            "title": "Hauptsponsor",
+            "cta": "Werde Sponsor"
+        },
+        "contact": {
+            "title": "Kontakt",
+            "instagram": "Instagram",
+            "email": "E-Mail"
+        },
+        "copyright": "© 2025 Souvenirs Event Team. Alle Rechte vorbehalten."
+    },
+    "nav": {
+        "about": "Über uns",
+        "sponsors": "Sponsoren"
+    }
+}

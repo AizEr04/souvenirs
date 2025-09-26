@@ -1,6 +1,7 @@
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
 import "./styles.css";
-import faviconUrl from "./assets/favicon.ico?url";
+import faviconUrl from "./assets/souvenirs-logo.png?url";
+import "./i18n/i18n";
 
 export function links() {
   return [{ rel: "icon", href: faviconUrl, type: "image/x-icon" }];

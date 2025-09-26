@@ -1,0 +1,138 @@
+{
+    "home": {
+        "hero": {
+            "title": "SOUVENIRS",
+            "subtitle": "Vivre ensemble musique, culture et sport"
+        },
+        "event": {
+            "date": "Date",
+            "place": "Lieu",
+            "time": "Heure",
+            "details": "Voir les détails"
+        }
+    },
+    "info": {
+        "empty": {
+            "heading": "Détails de l’événement",
+            "text": "Choisissez un événement sur la page d’accueil pour afficher les informations détaillées.",
+            "backHome": "Retour à l’accueil"
+        },
+        "back": "Retour à l’accueil",
+        "fields": {
+            "date": "Date",
+            "time": "Heure",
+            "place": "Lieu",
+            "capacity": "Capacité",
+            "organizer": "Organisateur"
+        },
+        "people": "personnes",
+        "sections": {
+            "about": "À propos de l’événement",
+            "highlights": "Points forts",
+            "practical": "Informations pratiques"
+        },
+        "practical": {
+            "registration": "Inscription",
+            "catering": "Restauration",
+            "parking": "Parking",
+            "weather": "Météo",
+            "accessibility": "Accessibilité"
+        }
+    },
+    "about": {
+        "heading": "À propos de nous",
+        "who": {
+            "title": "Qui sommes-nous ?",
+            "p1": "Souvenirs est une équipe d’événementiel passionnée, dédiée à créer des expériences inoubliables. Depuis notre création, nous organisons avec succès des soirées, des tournois sportifs et des événements culturels qui rassemblent les gens et créent des souvenirs durables.",
+            "p2": "Notre nom « Souvenirs » représente exactement cela – nous voulons que chaque événement devienne un souvenir précieux dans le cœur de nos participants. Avec créativité, engagement et amour du détail, nous planifions des événements qui vont bien au-delà de l’ordinaire."
+        },
+        "mission": {
+            "title": "Notre mission",
+            "text": "Unir musique, culture et sport tout en créant une atmosphère où chacun se sent bienvenu et valorisé. Nous croyons que les meilleurs événements naissent quand la passion rencontre le professionnalisme."
+        },
+        "image": {
+            "alt": "L’équipe d’événement Souvenirs en pleine planification"
+        },
+        "values": {
+            "heading": "Nos valeurs",
+            "passion": {
+                "title": "Passion",
+                "text": "Nous sommes passionnés par notre travail et apportons cette énergie à chaque événement."
+            },
+            "community": {
+                "title": "Communauté",
+                "text": "Les événements doivent relier les gens et créer un sentiment d’unité."
+            },
+            "quality": {
+                "title": "Qualité",
+                "text": "Nous visons les normes les plus élevées et soignons chaque détail pour des événements parfaits."
+            }
+        }
+    },
+    "sponsors": {
+        "heading": "Sponsors",
+        "cta": {
+            "title": "Nous recherchons des sponsors !",
+            "text": "Nous sommes actuellement à la recherche de partenaires et de sponsors pour nous aider à créer des événements inoubliables. Si vous souhaitez rejoindre notre communauté et associer votre marque à des expériences culturelles dynamiques, contactez-nous !"
+        },
+        "benefits": {
+            "heading": "Pourquoi devenir sponsor ?",
+            "reach": {
+                "title": "Portée",
+                "text": "Touchez un public diversifié lors de nos événements et laissez une impression durable."
+            },
+            "brand": {
+                "title": "Image de marque",
+                "text": "Associez votre marque à des expériences positives et renforcez votre image."
+            },
+            "community": {
+                "title": "Communauté",
+                "text": "Rejoignez une communauté dynamique et soutenez la culture et le sport locaux."
+            }
+        },
+        "form": {
+            "title": "Intéressé par un partenariat ?",
+            "subtitle": "Contactez-nous et créons ensemble de superbes événements !",
+            "ariaLabel": "Formulaire de demande de sponsoring",
+            "fields": {
+                "name": "Nom",
+                "company": "Entreprise",
+                "email": "E-mail",
+                "phone": "Téléphone",
+                "message": "Message"
+            },
+            "placeholders": {
+                "name": "Votre nom complet",
+                "company": "Nom de votre entreprise",
+                "email": "votre.email@exemple.ch",
+                "phone": "+41 79 123 45 67",
+                "message": "Parlez-nous de vos idées pour un partenariat…"
+            },
+            "submit": "Envoyer la demande de sponsoring",
+            "sending": "Envoi…",
+            "success": "Merci ! Nous avons bien reçu votre message et vous répondrons prochainement.",
+            "errorMessage": "Échec de l’envoi. Réessayez plus tard ou contactez-nous directement."
+        },
+        "direct": {
+            "title": "Ou contactez-nous directement :",
+            "emailAria": "Envoyer un e-mail à Souvenirs",
+            "phoneAria": "Appeler le numéro de Souvenirs"
+        }
+    },
+    "footer": {
+        "sponsor": {
+            "title": "Sponsor principal",
+            "cta": "Devenir sponsor"
+        },
+        "contact": {
+            "title": "Contact",
+            "instagram": "Instagram",
+            "email": "E-mail"
+        },
+        "copyright": "© 2025 Souvenirs Event Team. Tous droits réservés."
+    },
+    "nav": {
+        "about": "À propos",
+        "sponsors": "Sponsors"
+    }
+}

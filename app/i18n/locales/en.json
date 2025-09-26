@@ -1,0 +1,138 @@
+{
+    "home": {
+        "hero": {
+            "title": "SOUVENIRS",
+            "subtitle": "Experience music, culture & sport together"
+        },
+        "event": {
+            "date": "Date",
+            "place": "Location",
+            "time": "Time",
+            "details": "View details"
+        }
+    },
+    "info": {
+        "empty": {
+            "heading": "Event details",
+            "text": "Select an event on the homepage to view detailed information.",
+            "backHome": "Back to homepage"
+        },
+        "back": "Back to homepage",
+        "fields": {
+            "date": "Date",
+            "time": "Time",
+            "place": "Location",
+            "capacity": "Capacity",
+            "organizer": "Organizer"
+        },
+        "people": "people",
+        "sections": {
+            "about": "About the event",
+            "highlights": "Highlights",
+            "practical": "Practical information"
+        },
+        "practical": {
+            "registration": "Registration",
+            "catering": "Catering",
+            "parking": "Parking",
+            "weather": "Weather",
+            "accessibility": "Accessibility"
+        }
+    },
+    "about": {
+        "heading": "About us",
+        "who": {
+            "title": "Who are we?",
+            "p1": "Souvenirs is a passionate event team dedicated to creating unforgettable experiences. Since our founding, we have successfully organized parties, sports tournaments, and cultural events that bring people together and create lasting memories.",
+            "p2": "Our name \"Souvenirs\" stands for exactly that – we want every event to become a cherished souvenir in the hearts of our participants. With creativity, commitment and attention to detail, we plan events that go far beyond the ordinary."
+        },
+        "mission": {
+            "title": "Our mission",
+            "text": "To unite music, culture and sport while creating an atmosphere where everyone feels welcome and valued. We believe the best events happen when passion meets professionalism."
+        },
+        "image": {
+            "alt": "The Souvenirs event team planning together"
+        },
+        "values": {
+            "heading": "Our values",
+            "passion": {
+                "title": "Passion",
+                "text": "We are passionate about what we do and bring that energy to every event."
+            },
+            "community": {
+                "title": "Community",
+                "text": "Events should connect people and create a sense of togetherness."
+            },
+            "quality": {
+                "title": "Quality",
+                "text": "We pursue the highest standards and care about every detail for perfect events."
+            }
+        }
+    },
+    "sponsors": {
+        "heading": "Sponsors",
+        "cta": {
+            "title": "We are looking for sponsors!",
+            "text": "We are currently looking for partners and sponsors to help us create unforgettable events. If you'd like to be part of our community and connect your brand with vibrant cultural experiences, we look forward to hearing from you!"
+        },
+        "benefits": {
+            "heading": "Why become a sponsor?",
+            "reach": {
+                "title": "Reach",
+                "text": "Reach a diverse audience at our events and create lasting impressions."
+            },
+            "brand": {
+                "title": "Brand image",
+                "text": "Associate your brand with positive experiences and strengthen your image."
+            },
+            "community": {
+                "title": "Community",
+                "text": "Join a lively community and support local culture and sports."
+            }
+        },
+        "form": {
+            "title": "Interested in a partnership?",
+            "subtitle": "Contact us and let's create great events together!",
+            "ariaLabel": "Sponsorship inquiry form",
+            "fields": {
+                "name": "Name",
+                "company": "Company",
+                "email": "Email",
+                "phone": "Phone",
+                "message": "Message"
+            },
+            "placeholders": {
+                "name": "Your full name",
+                "company": "Your company name",
+                "email": "your.email@example.com",
+                "phone": "+41 79 123 45 67",
+                "message": "Tell us about your ideas for a partnership..."
+            },
+            "submit": "Send sponsorship inquiry",
+            "sending": "Sending…",
+            "success": "Thank you! We have received your message and will get back to you soon.",
+            "errorMessage": "Sending failed. Please try again later or contact us directly."
+        },
+        "direct": {
+            "title": "Or contact us directly:",
+            "emailAria": "Send email to Souvenirs",
+            "phoneAria": "Call Souvenirs phone number"
+        }
+    },
+    "footer": {
+        "sponsor": {
+            "title": "Main Sponsor",
+            "cta": "Become a Sponsor"
+        },
+        "contact": {
+            "title": "Contact",
+            "instagram": "Instagram",
+            "email": "Email"
+        },
+        "copyright": "© 2025 Souvenirs Event Team. All rights reserved."
+    },
+    "nav": {
+        "about": "About Us",
+        "sponsors": "Sponsors"
+    }
+}

@@ -7,5 +7,5 @@ export default defineConfig({
     react(),
     reactRouter(), // React Router Framework-Build
   ],
-  base: "/souvenirs/",
+  base: "/",
 });
