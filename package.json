@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "react-router dev",
     "build": "react-router build",
-    "postbuild": "touch build/client/.nojekyll && cp CNAME build/client/",
+    "postbuild": "cp build/client/__spa-fallback.html build/client/404.html && touch build/client/.nojekyll && cp CNAME build/client/",
     "deploy": "gh-pages -d build/client -b gh-pages -t"
   },
   "dependencies": {

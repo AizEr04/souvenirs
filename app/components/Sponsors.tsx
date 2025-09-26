@@ -8,9 +8,9 @@ import { Mail, Phone, Heart, Star, Users, Trophy } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { z } from "zod";
 
-const SERVICE_ID = import.meta.env.EMAILJS_SERVICE_ID;
-const TEMPLATE_ID = import.meta.env.EMAILJS_TEMPLATE_ID;
-const PUBLIC_KEY = import.meta.env.EMAILJS_PUBLIC_KEY;
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 // Zod Schema – schlank & robust
 const schema = z.object({
