@@ -3,16 +3,23 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import { EVENTS } from "../data/events";
+import { UPCOMING_EVENTS, PAST_EVENTS } from "../data/events";
 import { useTranslation } from "react-i18next";
 import { L } from "../lib/i18n-helpers";
+import { useState } from "react";
+import { EventGallery } from "./EventGallery";
 
 export function HomePage() {
   const { t } = useTranslation();
+  const [selectedGallerySlug, setSelectedGallerySlug] = useState<string | null>(null);
+
+  const selectedPastEvent = selectedGallerySlug
+    ? PAST_EVENTS.find((e) => e.slug === selectedGallerySlug)
+    : undefined;
 
   return (
     <>
-      {/* Hero ... unverändert mit t("home.hero.*") */}
+      {/* Hero */}
       <div className="relative">
         <div className="h-96 bg-cover bg-center relative" style={{ backgroundImage: `url(${hero})` }}>
           <div className="absolute inset-0 bg-gradient-to-br from-purple-900/60 via-blue-900/50 to-cyan-900/60" />
@@ -23,43 +30,133 @@ export function HomePage() {
         </div>
       </div>
 
-      {/* Events */}
-      <div className="w-full px-6 py-12 flex-1">
-        <div className="space-y-6">
-          {EVENTS.map((event) => (
-            <Card key={event.id} className="bg-white shadow-lg border-0 w-full overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className={`h-2 bg-gradient-to-r ${event.color}`} />
-              <CardHeader className="bg-white">
-                <CardTitle className={`text-lg bg-gradient-to-r ${event.color} bg-clip-text text-transparent`}>
-                  {L(event.name)}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3 bg-white">
-                <div className="flex items-center gap-2 text-slate-700">
-                  <span className="font-medium text-slate-800">{t("home.event.date")}:</span>
-                  <span>{L(event.date)}</span>
+      {/* Upcoming Events */}
+      <div className="w-full px-6 py-12">
+        <h2 className="text-3xl font-bold mb-8 text-center">
+          {t("home.upcomingTitle", "Anstehende Events")}
+        </h2>
+
+        <div className="space-y-6 max-w-4xl mx-auto">
+          {UPCOMING_EVENTS.map((event) => (
+            <Card
+              key={event.id}
+              className="group relative w-full h-96 overflow-hidden shadow-lg border-0 hover:shadow-2xl transition-all duration-500"
+            >
+              {/* Background Image */}
+              <div className="absolute inset-0">
+                <img
+                  src={event.coverImage ?? hero}
+                  alt={`${L(event.name)} Event`}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 group-hover:from-black/90 group-hover:via-black/50 group-hover:to-black/30 transition-all duration-500" />
+              </div>
+
+              <div className="relative h-full flex flex-col justify-end p-8">
+                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${event.color}`} />
+
+                <div className="text-white space-y-4">
+                  <h3 className="text-4xl font-bold drop-shadow-lg mb-6">{L(event.name)}</h3>
+
+                  <div className="space-y-3 text-lg">
+                    <div className="flex items-center gap-3">
+                      <span className="text-white/90 font-semibold">{t("home.event.date")}:</span>
+                      <span className="text-white font-medium">{L(event.date)}</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <span className="text-white/90 font-semibold">{t("home.event.place")}:</span>
+                      <span className="text-white font-medium">{L(event.place)}</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <span className="text-white/90 font-semibold">{t("home.event.time")}:</span>
+                      <span className="text-white font-medium">
+                        {event.startTime} - {event.endTime}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Mobile always visible; desktop hover */}
+                  <div className="pt-6 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+                    <Link to={`/info/${event.slug}`}>
+                      <Button
+                        className={`bg-gradient-to-r ${event.color} hover:opacity-90 text-white w-full text-lg py-3 shadow-lg`}
+                      >
+                        {t("home.event.details")}
+                        <ArrowRight className="w-5 h-5 ml-2" />
+                      </Button>
+                    </Link>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2 text-slate-700">
-                  <span className="font-medium text-slate-800">{t("home.event.place")}:</span>
-                  <span>{L(event.place)}</span>
-                </div>
-                <div className="flex items-center gap-2 text-slate-700">
-                  <span className="font-medium text-slate-800">{t("home.event.time")}:</span>
-                  <span>{event.startTime} - {event.endTime}</span>
-                </div>
-                <div className="pt-3 border-t border-slate-100">
-                  <Link to={`/info/${event.slug}`}>
-                    <Button className={`bg-gradient-to-r ${event.color} hover:opacity-90 text-white w-full`}>
-                      {t("home.event.details")}
-                      <ArrowRight className="w-4 h-4 ml-2" />
-                    </Button>
-                  </Link>
-                </div>
-              </CardContent>
+              </div>
             </Card>
           ))}
         </div>
       </div>
+
+      {/* Past Events */}
+      <div className="w-full px-6 py-12 bg-gray-50">
+        <h2 className="text-3xl font-bold mb-8 text-center">
+          {t("home.pastTitle", "Vergangene Events")}
+        </h2>
+
+        <div className="space-y-6 max-w-4xl mx-auto">
+          {PAST_EVENTS.map((event) => (
+            <Card
+              key={event.id}
+              className="group relative w-full h-80 overflow-hidden cursor-pointer shadow-lg border-0 hover:shadow-2xl transition-all duration-500"
+              onClick={() => setSelectedGallerySlug(event.slug)}
+            >
+              <div className="absolute inset-0">
+                <img
+                  src={event.coverImage ?? hero}
+                  alt={`${L(event.name)} Event`}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 group-hover:from-black/90 group-hover:via-black/50 group-hover:to-black/30 transition-all duration-500" />
+              </div>
+
+              <div className="relative h-full flex flex-col justify-end p-8">
+                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${event.color}`} />
+
+                <div className="text-white space-y-4">
+                  <h3 className="text-4xl font-bold drop-shadow-lg mb-4">{L(event.name)}</h3>
+
+                  <div className="space-y-2 text-lg">
+                    <div className="flex items-center gap-3">
+                      <span className="text-white/90 font-semibold">{t("home.event.date")}:</span>
+                      <span className="text-white font-medium">{L(event.date)}</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <span className="text-white/90 font-semibold">{t("home.event.place")}:</span>
+                      <span className="text-white font-medium">{L(event.place)}</span>
+                    </div>
+                  </div>
+
+                  <div className="pt-6 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+                    <Button
+                      className={`bg-gradient-to-r ${event.color} hover:opacity-90 text-white w-full text-lg py-3 shadow-lg`}
+                    >
+                      {t("home.past.gallery", "Fotogalerie anzeigen")}
+                      <ArrowRight className="w-5 h-5 ml-2" />
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          ))}
+        </div>
+      </div>
+
+      {/* Gallery Modal */}
+      {selectedPastEvent?.gallery && selectedPastEvent.gallery.length > 0 && (
+        <EventGallery
+          eventName={L(selectedPastEvent.name)}
+          images={selectedPastEvent.gallery}
+          onClose={() => setSelectedGallerySlug(null)}
+        />
+      )}
     </>
   );
 }

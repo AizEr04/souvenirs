@@ -1,5 +1,10 @@
 {
     "home": {
+        "upcomingTitle": "Anstehende Events",
+        "pastTitle": "Vergangene Events",
+        "past": {
+            "gallery": "Fotogalerie anzeigen"
+        },
         "hero": {
             "title": "SOUVENIRS",
             "subtitle": "Gemeinsam Musik, Kultur & Sport erleben"

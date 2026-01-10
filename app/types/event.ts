@@ -11,22 +11,25 @@ export type PracticalInfo = {
 
 export type EventDetails = {
   description: LocalizedString;
-  capacity?: number;            // bleibt optional & sprachunabhängig (Zahl)
+  capacity?: number;            
   price?: LocalizedString;
   organizer?: LocalizedString;
   category?: LocalizedString;
-  highlights?: LocalizedString[]; // Array lokalisierter Strings
+  highlights?: LocalizedString[]; 
   practical?: PracticalInfo;
 };
 
 export type Event = {
   id: number;
-  slug: string;                 // stabil & nicht übersetzt (für URL)
+  slug: string;                 
   name: LocalizedString;
-  date: LocalizedString;        // z. B. „08. November“ / „Nov 8“
+  date: LocalizedString;       
   place: LocalizedString;
-  startTime: string;            // Uhrzeit bleibt sprachneutral
-  endTime: string;
-  color: string;                // Tailwind-Klassen
+  startTime?: string;
+  endTime?: string;
+  color: string;
+  coverImage?: string;
+  gallery?: string[];
+  isPast?: boolean;             
   details: EventDetails;
 };

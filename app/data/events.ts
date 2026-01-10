@@ -1,60 +1,97 @@
 import type { Event } from "../types/event";
 
 export const EVENTS: Event[] = [
+  // --- Upcoming ---
   {
     id: 1,
-    slug: "martinsmarkt",
+    slug: "musikevent-bonn",
     name: {
-      de: "Souvenirs Stand am Martinsmarkt",
-      en: "Souvenirs stand at Martinsmarkt",
-      fr: "Stand Souvenirs au Martinsmarkt"
+      de: "Souvenirs bis d'Ohre lüüte",
+      en: "Souvenirs until your ears ring",
+      fr: "Des souvenirs à n'en plus finir",
     },
     date: {
-      de: "08. November",
-      en: "November 8",
-      fr: "8 novembre"
+      de: "14. März 2026",
+      en: "March 14 2026",
+      fr: "14. mars 2026",
     },
     place: {
-      de: "Hauptstrasse Düdingen",
-      en: "Hauptstrasse Düdingen",
-      fr: "Hauptstrasse Düdingen"
+      de: "Bad Bonn Düdingen",
+      en: "Bad Bonn Düdingen",
+      fr: "Bad Bonn Düdingen",
     },
-    startTime: "08:00",
-    endTime: "16:00",
+    startTime: "20:00",
     color: "from-blue-500 to-purple-600",
+    isPast: false,
+    // coverImage: "/hero.jpg", // oder ein eigenes Bild (z.B. /assets/martinsmarkt.jpg)
+
     details: {
       description: {
-        de: "Am diesjährigen Martinsmarkt in Düdingen sind wir mit einem eigenen Stand vertreten. Dort schenken wir erfrischende Getränke aus und bieten feinen Süssmost an. Kommt vorbei, gönnt euch etwas Leckeres und unterstützt gleichzeitig unseren Verein – wir freuen uns auf euch!",
-        en: "We’ll have our own stand at this year’s Martinsmarkt in Düdingen. We’ll serve refreshing drinks and delicious apple must. Come by, treat yourself, and support our club — we’re excited to see you!",
-        fr: "Nous aurons notre propre stand au Martinsmarkt de Düdingen cette année. Nous servirons des boissons rafraîchissantes et du moût de pomme. Passez nous voir, faites-vous plaisir et soutenez notre association — nous nous réjouissons de vous accueillir !"
+        de: "Eine Nacht voller Bass, Energie und guter Vibes im Bad Bonn. Fünf DJs liefern ein breites Spektrum von House und Techno über Drum & Bass bis hin zu Hard Techno und Hard Drum & Bass. Das Bad Bonn, bekannt als kleines Kulturlokal und Bar in der Region, bietet dafür die perfekte intime Atmosphäre. Komm vorbei, tanz mit uns und feier bis die Ohren läuten.",
+        en: "A night full of bass, energy and good vibes at Bad Bonn. Five DJs will be spinning a wide range of music, from house and techno to drum & bass, hard techno and hard drum & bass. Bad Bonn, known as a small cultural venue and bar in the region, offers the perfect intimate atmosphere for this event. Come along, dance with us and party until your ears ring.",
+        fr: "Une nuit pleine de basses, d'énergie et de bonnes vibrations au Bad Bonn. Cinq DJ proposent un large éventail musical allant de la house et la techno à la drum & bass, en passant par la hard techno et la hard drum & bass. Le Bad Bonn, connu comme un petit bar culturel dans la région, offre l'atmosphère intime parfaite pour cela. Viens nous rejoindre, danse avec nous et fais la fête jusqu'à ce que tes oreilles sifflent.",
       },
-      price: { de: "Kostenlos", en: "Free", fr: "Gratuit" },
+      price: { de: "10.-", en: "10.-", fr: "10.-" },
       organizer: { de: "SOUVENIRS", en: "SOUVENIRS", fr: "SOUVENIRS" },
-      category: { de: "Kultur", en: "Culture", fr: "Culture" },
-      highlights: [
-        { de: "Selbstgemachter Süssmost", en: "Homemade apple must", fr: "Moût de pomme fait maison" },
-        { de: "Warmer & kalter Öpfuschuss", en: "Warm & cold Öpfuschuss", fr: "Punch de pomme Öpfuschuss" }
-      ],
-      // capacity weggelassen → optional
+      category: { de: "Musik", en: "Music", fr: "Musique" },
       practical: {
         anmeldung: {
           de: "Keine Anmeldung nötig – kommt einfach vorbei!",
           en: "No registration required — just drop by!",
-          fr: "Pas d’inscription nécessaire — venez simplement !"
+          fr: "Pas d’inscription nécessaire — venez simplement !",
         },
         verpflegung: {
-          de: "Getränke & Süssmost am Stand.",
-          en: "Drinks & apple must at the stand.",
-          fr: "Boissons & moût de pomme au stand."
+          de: "Barbetrieb",
+          en: "Bar service",
+          fr: "Service de bar",
         },
         wetter: {
           de: "Findet bei jedem Wetter statt.",
           en: "Takes place in all weather.",
-          fr: "A lieu par tous les temps."
-        }
+          fr: "A lieu par tous les temps.",
+        },
+      },
+    },
+  },
+
+  // --- Past (Beispiele, kannst du später ersetzen) ---
+
+  {
+    id: 101,
+    slug: "martinsmarkt",
+    name: {
+      de: "Souvenirs Stand am Martinsmarkt",
+      en: "Souvenirs stand at Martinsmarkt",
+      fr: "Stand Souvenirs au Martinsmarkt",
+    },
+    date: {
+      de: "08. November 2025",
+      en: "November 8 2025",
+      fr: "8 novembre 2025",
+    },
+    place: {
+      de: "Hauptstrasse Düdingen",
+      en: "Hauptstrasse Düdingen",
+      fr: "Hauptstrasse Düdingen",
+    },
+    color: "from-blue-500 to-purple-600",
+    isPast: true,
+    // coverImage: "/hero.jpg", // oder ein eigenes Bild (z.B. /assets/martinsmarkt.jpg)
+    // gallery: [
+    //   "https://images.unsplash.com/photo-1628314200733-5f7785cdc925?auto=format&fit=crop&w=1600&q=80",
+    //   "https://images.unsplash.com/photo-1764152109769-4183b4b4e585?auto=format&fit=crop&w=1600&q=80",
+    // ],
+    details: {
+      description: {
+        de: "Am diesjährigen Martinsmarkt in Düdingen sind wir mit einem eigenen Stand vertreten. Dort schenken wir erfrischende Getränke aus und bieten feinen Süssmost an. Kommt vorbei, gönnt euch etwas Leckeres und unterstützt gleichzeitig unseren Verein – wir freuen uns auf euch!",
+        en: "We’ll have our own stand at this year’s Martinsmarkt in Düdingen. We’ll serve refreshing drinks and delicious apple must. Come by, treat yourself, and support our club — we’re excited to see you!",
+        fr: "Nous aurons notre propre stand au Martinsmarkt de Düdingen cette année. Nous servirons des boissons rafraîchissantes et du moût de pomme. Passez nous voir, faites-vous plaisir et soutenez notre association — nous nous réjouissons de vous accueillir !",
       }
-    }
-  }
+    },
+  },
 ];
 
-export const getEventBySlug = (slug: string) => EVENTS.find(e => e.slug === slug);
+export const UPCOMING_EVENTS = EVENTS.filter((e) => !e.isPast);
+export const PAST_EVENTS = EVENTS.filter((e) => !!e.isPast);
+
+export const getEventBySlug = (slug: string) => EVENTS.find((e) => e.slug === slug);
