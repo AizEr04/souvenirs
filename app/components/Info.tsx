@@ -73,7 +73,10 @@ export function Info() {
                 <Clock className="w-5 h-5 text-blue-500" />
                 <div>
                   <div className="font-medium">{t("info.fields.time")}</div>
-                  <div>{selectedEvent.startTime} - {selectedEvent.endTime}</div>
+                  <div>
+                    {selectedEvent.startTime}
+                    {selectedEvent.endTime ? ` – ${selectedEvent.endTime}` : ""}
+                  </div>
                 </div>
               </div>
               <div className="flex items-center gap-2 text-slate-700">

@@ -44,13 +44,20 @@ export function HomePage() {
             >
               {/* Background Image */}
               <div className="absolute inset-0">
-                <img
-                  src={event.coverImage ?? hero}
-                  alt={`${L(event.name)} Event`}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 group-hover:from-black/90 group-hover:via-black/50 group-hover:to-black/30 transition-all duration-500" />
+                {event.coverImage ? (
+                  <>
+                    <img
+                      src={event.coverImage}
+                      alt={`${L(event.name)} Event`}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 group-hover:from-black/90 group-hover:via-black/50 group-hover:to-black/30 transition-all duration-500" />
+                  </>
+                ) : (
+                  // Fallback ohne Bild: nur Hintergrund-Verlauf
+                  <div className={`w-full h-full bg-gradient-to-br ${event.color} opacity-90`} />
+                )}
               </div>
 
               <div className="relative h-full flex flex-col justify-end p-8">
@@ -71,7 +78,8 @@ export function HomePage() {
                     <div className="flex items-center gap-3">
                       <span className="text-white/90 font-semibold">{t("home.event.time")}:</span>
                       <span className="text-white font-medium">
-                        {event.startTime} - {event.endTime}
+                      {event.startTime}
+                      {event.endTime ? ` – ${event.endTime}` : ""}
                       </span>
                     </div>
                   </div>
@@ -108,13 +116,20 @@ export function HomePage() {
               onClick={() => setSelectedGallerySlug(event.slug)}
             >
               <div className="absolute inset-0">
-                <img
-                  src={event.coverImage ?? hero}
-                  alt={`${L(event.name)} Event`}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 group-hover:from-black/90 group-hover:via-black/50 group-hover:to-black/30 transition-all duration-500" />
+                {event.coverImage ? (
+                  <>
+                    <img
+                      src={event.coverImage}
+                      alt={`${L(event.name)} Event`}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 group-hover:from-black/90 group-hover:via-black/50 group-hover:to-black/30 transition-all duration-500" />
+                  </>
+                ) : (
+                  // Fallback ohne Bild: nur Hintergrund-Verlauf
+                  <div className={`w-full h-full bg-gradient-to-br ${event.color} opacity-90`} />
+                )}
               </div>
 
               <div className="relative h-full flex flex-col justify-end p-8">

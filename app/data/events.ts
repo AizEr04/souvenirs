@@ -1,10 +1,12 @@
 import type { Event } from "../types/event";
+import musikeventBadBonn from "../assets/musikevent-badbonn.png";
+import martinsmarkt from "../assets/martinsmarkt.jpg";
 
 export const EVENTS: Event[] = [
   // --- Upcoming ---
   {
     id: 1,
-    slug: "musikevent-bonn",
+    slug: "musikevent-badbonn",
     name: {
       de: "Souvenirs bis d'Ohre lüüte",
       en: "Souvenirs until your ears ring",
@@ -23,7 +25,7 @@ export const EVENTS: Event[] = [
     startTime: "20:00",
     color: "from-blue-500 to-purple-600",
     isPast: false,
-    // coverImage: "/hero.jpg", // oder ein eigenes Bild (z.B. /assets/martinsmarkt.jpg)
+    coverImage: musikeventBadBonn,
 
     details: {
       description: {
@@ -76,7 +78,7 @@ export const EVENTS: Event[] = [
     },
     color: "from-blue-500 to-purple-600",
     isPast: true,
-    // coverImage: "/hero.jpg", // oder ein eigenes Bild (z.B. /assets/martinsmarkt.jpg)
+    coverImage: martinsmarkt, 
     // gallery: [
     //   "https://images.unsplash.com/photo-1628314200733-5f7785cdc925?auto=format&fit=crop&w=1600&q=80",
     //   "https://images.unsplash.com/photo-1764152109769-4183b4b4e585?auto=format&fit=crop&w=1600&q=80",
