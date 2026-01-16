@@ -1,6 +1,12 @@
 import type { Event } from "../types/event";
-import musikeventBadBonn from "../assets/musikevent-badbonn.png";
-import martinsmarkt from "../assets/martinsmarkt.jpg";
+import musikeventBadBonn from "../assets/badbonn/musikevent-badbonn.png";
+import martinsmarkt from "../assets/martinsmarkt/martinsmarkt.jpg";
+import martinsmarktGallery1 from "../assets/martinsmarkt/martinsmarkt-gallery-01.jpeg";
+import martinsmarktGallery2 from "../assets/martinsmarkt/martinsmarkt-gallery-02.jpeg";
+import martinsmarktGallery3 from "../assets/martinsmarkt/martinsmarkt-gallery-03.jpeg";
+import martinsmarktGallery4 from "../assets/martinsmarkt/martinsmarkt-gallery-04.jpeg";
+
+
 
 export const EVENTS: Event[] = [
   // --- Upcoming ---
@@ -79,10 +85,12 @@ export const EVENTS: Event[] = [
     color: "from-blue-500 to-purple-600",
     isPast: true,
     coverImage: martinsmarkt, 
-    // gallery: [
-    //   "https://images.unsplash.com/photo-1628314200733-5f7785cdc925?auto=format&fit=crop&w=1600&q=80",
-    //   "https://images.unsplash.com/photo-1764152109769-4183b4b4e585?auto=format&fit=crop&w=1600&q=80",
-    // ],
+    gallery: [
+      martinsmarktGallery1,
+      martinsmarktGallery2,
+      martinsmarktGallery3,
+      martinsmarktGallery4,
+    ],
     details: {
       description: {
         de: "Am diesjährigen Martinsmarkt in Düdingen sind wir mit einem eigenen Stand vertreten. Dort schenken wir erfrischende Getränke aus und bieten feinen Süssmost an. Kommt vorbei, gönnt euch etwas Leckeres und unterstützt gleichzeitig unseren Verein – wir freuen uns auf euch!",
