@@ -1,4 +1,4 @@
-import image from "../assets/souvenirs-logo.png";
+import gruppenFoto from "../assets/gruppenfotos/gruppenfoto-01.jpeg";
 import { useTranslation } from "react-i18next";
 
 export function AboutUs() {
@@ -43,7 +43,7 @@ export function AboutUs() {
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img
-                src={image}
+                src={gruppenFoto}
                 alt={t("about.image.alt")}
                 className="w-full h-80 object-cover"
               />
