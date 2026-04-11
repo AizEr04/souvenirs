@@ -1,15 +1,74 @@
 import type { Event } from "../types/event";
-import musikeventBadBonn from "../assets/badbonn/musikevent-badbonn.png";
+import badbonn from "../assets/badbonn/musikevent-badbonn.png";
+import badboonnGallery1 from "../assets/badbonn/badbonn-gallery-01.jpeg";
+import badboonnGallery2 from "../assets/badbonn/badbonn-gallery-02.jpeg";
+import badboonnGallery3 from "../assets/badbonn/badbonn-gallery-03.jpeg";
+import badboonnGallery4 from "../assets/badbonn/badbonn-gallery-04.jpeg";
+import badboonnGallery5 from "../assets/badbonn/badbonn-gallery-05.jpeg";
+import badboonnGallery6 from "../assets/badbonn/badbonn-gallery-06.jpeg";
 import martinsmarkt from "../assets/martinsmarkt/martinsmarkt.jpg";
 import martinsmarktGallery1 from "../assets/martinsmarkt/martinsmarkt-gallery-01.jpeg";
 import martinsmarktGallery2 from "../assets/martinsmarkt/martinsmarkt-gallery-02.jpeg";
 import martinsmarktGallery3 from "../assets/martinsmarkt/martinsmarkt-gallery-03.jpeg";
 import martinsmarktGallery4 from "../assets/martinsmarkt/martinsmarkt-gallery-04.jpeg";
 
-
-
 export const EVENTS: Event[] = [
   // --- Upcoming ---
+  
+  // (Beispiel)
+  // {
+  //   id: 1,
+  //   slug: "musikevent-badbonn",
+  //   name: {
+  //     de: "Souvenirs bis d'Ohre lüüte",
+  //     en: "Souvenirs until your ears ring",
+  //     fr: "Des souvenirs à n'en plus finir",
+  //   },
+  //   date: {
+  //     de: "14. März 2026",
+  //     en: "March 14 2026",
+  //     fr: "14. mars 2026",
+  //   },
+  //   place: {
+  //     de: "Bad Bonn Düdingen",
+  //     en: "Bad Bonn Düdingen",
+  //     fr: "Bad Bonn Düdingen",
+  //   },
+  //   startTime: "20:00",
+  //   color: "from-blue-500 to-purple-600",
+  //   isPast: false,
+  //   coverImage: musikeventBadBonn,
+
+  //   details: {
+  //     description: {
+  //       de: "Eine Nacht voller Bass, Energie und guter Vibes im Bad Bonn. Fünf DJs liefern ein breites Spektrum von House und Techno über Drum & Bass bis hin zu Hard Techno und Hard Drum & Bass. Das Bad Bonn, bekannt als kleines Kulturlokal und Bar in der Region, bietet dafür die perfekte intime Atmosphäre. Komm vorbei, tanz mit uns und feier bis die Ohren läuten.",
+  //       en: "A night full of bass, energy and good vibes at Bad Bonn. Five DJs will be spinning a wide range of music, from house and techno to drum & bass, hard techno and hard drum & bass. Bad Bonn, known as a small cultural venue and bar in the region, offers the perfect intimate atmosphere for this event. Come along, dance with us and party until your ears ring.",
+  //       fr: "Une nuit pleine de basses, d'énergie et de bonnes vibrations au Bad Bonn. Cinq DJ proposent un large éventail musical allant de la house et la techno à la drum & bass, en passant par la hard techno et la hard drum & bass. Le Bad Bonn, connu comme un petit bar culturel dans la région, offre l'atmosphère intime parfaite pour cela. Viens nous rejoindre, danse avec nous et fais la fête jusqu'à ce que tes oreilles sifflent.",
+  //     },
+  //     price: { de: "10.-", en: "10.-", fr: "10.-" },
+  //     organizer: { de: "SOUVENIRS", en: "SOUVENIRS", fr: "SOUVENIRS" },
+  //     category: { de: "Musik", en: "Music", fr: "Musique" },
+  //     practical: {
+  //       anmeldung: {
+  //         de: "Keine Anmeldung nötig – kommt einfach vorbei!",
+  //         en: "No registration required — just drop by!",
+  //         fr: "Pas d’inscription nécessaire — venez simplement !",
+  //       },
+  //       verpflegung: {
+  //         de: "Barbetrieb",
+  //         en: "Bar service",
+  //         fr: "Service de bar",
+  //       },
+  //       wetter: {
+  //         de: "Findet bei jedem Wetter statt.",
+  //         en: "Takes place in all weather.",
+  //         fr: "A lieu par tous les temps.",
+  //       },
+  //     },
+  //   },
+  // },
+
+  // --- Past ---
   {
     id: 1,
     slug: "musikevent-badbonn",
@@ -28,41 +87,25 @@ export const EVENTS: Event[] = [
       en: "Bad Bonn Düdingen",
       fr: "Bad Bonn Düdingen",
     },
-    startTime: "20:00",
     color: "from-blue-500 to-purple-600",
-    isPast: false,
-    coverImage: musikeventBadBonn,
-
+    isPast: true,
+    coverImage: badbonn,
+    gallery: [
+      badboonnGallery1,
+      badboonnGallery2,
+      badboonnGallery3,
+      badboonnGallery4,
+      badboonnGallery5,
+      badboonnGallery6,
+    ],
     details: {
       description: {
-        de: "Eine Nacht voller Bass, Energie und guter Vibes im Bad Bonn. Fünf DJs liefern ein breites Spektrum von House und Techno über Drum & Bass bis hin zu Hard Techno und Hard Drum & Bass. Das Bad Bonn, bekannt als kleines Kulturlokal und Bar in der Region, bietet dafür die perfekte intime Atmosphäre. Komm vorbei, tanz mit uns und feier bis die Ohren läuten.",
-        en: "A night full of bass, energy and good vibes at Bad Bonn. Five DJs will be spinning a wide range of music, from house and techno to drum & bass, hard techno and hard drum & bass. Bad Bonn, known as a small cultural venue and bar in the region, offers the perfect intimate atmosphere for this event. Come along, dance with us and party until your ears ring.",
-        fr: "Une nuit pleine de basses, d'énergie et de bonnes vibrations au Bad Bonn. Cinq DJ proposent un large éventail musical allant de la house et la techno à la drum & bass, en passant par la hard techno et la hard drum & bass. Le Bad Bonn, connu comme un petit bar culturel dans la région, offre l'atmosphère intime parfaite pour cela. Viens nous rejoindre, danse avec nous et fais la fête jusqu'à ce que tes oreilles sifflent.",
-      },
-      price: { de: "10.-", en: "10.-", fr: "10.-" },
-      organizer: { de: "SOUVENIRS", en: "SOUVENIRS", fr: "SOUVENIRS" },
-      category: { de: "Musik", en: "Music", fr: "Musique" },
-      practical: {
-        anmeldung: {
-          de: "Keine Anmeldung nötig – kommt einfach vorbei!",
-          en: "No registration required — just drop by!",
-          fr: "Pas d’inscription nécessaire — venez simplement !",
-        },
-        verpflegung: {
-          de: "Barbetrieb",
-          en: "Bar service",
-          fr: "Service de bar",
-        },
-        wetter: {
-          de: "Findet bei jedem Wetter statt.",
-          en: "Takes place in all weather.",
-          fr: "A lieu par tous les temps.",
-        },
+        de: "Eine Nacht voller Bass, Energie und guter Vibes im Bad Bonn. Fünf DJs lieferten ein breites Spektrum von House und Techno über Drum & Bass bis hin zu Hard Techno und Hard Drum & Bass. Das Bad Bonn, bekannt als kleines Kulturlokal und Bar in der Region, bot die perfekte intime Atmosphäre. Ein voller Erfolg!",
+        en: "A night full of bass, energy and good vibes at Bad Bonn. Five DJs spun a wide range of music, from house and techno to drum & bass, hard techno and hard drum & bass. Bad Bonn, known as a small cultural venue and bar in the region, offered the perfect intimate atmosphere. A great success!",
+        fr: "Une nuit pleine de basses, d'énergie et de bonnes vibrations au Bad Bonn. Cinq DJ ont proposé un large éventail musical allant de la house et la techno à la drum & bass, en passant par la hard techno et la hard drum & bass. Le Bad Bonn, connu comme un petit bar culturel dans la région, offrait l'atmosphère intime parfaite. Un grand succès !",
       },
     },
   },
-
-  // --- Past (Beispiele, kannst du später ersetzen) ---
 
   {
     id: 101,
@@ -84,7 +127,7 @@ export const EVENTS: Event[] = [
     },
     color: "from-blue-500 to-purple-600",
     isPast: true,
-    coverImage: martinsmarkt, 
+    coverImage: martinsmarkt,
     gallery: [
       martinsmarktGallery1,
       martinsmarktGallery2,
@@ -94,9 +137,9 @@ export const EVENTS: Event[] = [
     details: {
       description: {
         de: "Am diesjährigen Martinsmarkt in Düdingen sind wir mit einem eigenen Stand vertreten. Dort schenken wir erfrischende Getränke aus und bieten feinen Süssmost an. Kommt vorbei, gönnt euch etwas Leckeres und unterstützt gleichzeitig unseren Verein – wir freuen uns auf euch!",
-        en: "We’ll have our own stand at this year’s Martinsmarkt in Düdingen. We’ll serve refreshing drinks and delicious apple must. Come by, treat yourself, and support our club — we’re excited to see you!",
+        en: "We'll have our own stand at this year's Martinsmarkt in Düdingen. We'll serve refreshing drinks and delicious apple must. Come by, treat yourself, and support our club — we're excited to see you!",
         fr: "Nous aurons notre propre stand au Martinsmarkt de Düdingen cette année. Nous servirons des boissons rafraîchissantes et du moût de pomme. Passez nous voir, faites-vous plaisir et soutenez notre association — nous nous réjouissons de vous accueillir !",
-      }
+      },
     },
   },
 ];
