@@ -31,6 +31,7 @@ export function HomePage() {
       </div>
 
       {/* Upcoming Events */}
+      {UPCOMING_EVENTS.length > 0 && (
       <div className="w-full px-6 py-12">
         <h2 className="text-3xl font-bold mb-8 text-center">
           {t("home.upcomingTitle", "Anstehende Events")}
@@ -101,6 +102,7 @@ export function HomePage() {
           ))}
         </div>
       </div>
+      )}
 
       {/* Past Events */}
       <div className="w-full px-6 py-12 bg-gray-50">
